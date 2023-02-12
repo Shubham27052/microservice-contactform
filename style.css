@@ -1,0 +1,103 @@
+* {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+
+}
+
+body {
+    background-color:rgb(255, 255, 255);
+    margin:0;
+}
+
+#overlay{
+    width:100%;
+    height:100%;
+    position:fixed;
+    background-color:rgb(42, 166, 255,0.9)
+}
+
+#final-message{
+    background:white;
+   margin:70px auto;
+    width: 40%;
+    padding: 40px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+
+}
+#final-message-h3{
+margin: auto;
+padding: auto;
+    color: rgb(0, 0, 0);
+}
+
+form{
+    max-width:550px;
+    width:90%;
+    background:white;
+    margin:12vh auto 0 auto;
+    padding:40px;
+    border-radius: 3px;
+    box-sizing:border-box;
+
+}
+
+h1{
+    margin:0;
+    text-align:center
+}
+label{
+    display:block;
+    margin:20px 0;
+}
+
+input,textarea{
+    width:100%;
+    padding:10px;
+    box-sizing: border-box;
+    outline:none;
+    resize:none;
+    border:none;
+    border:1px solid #D3D3D3;
+}
+
+input[type="text"]:focus, textarea:focus{
+    border-bottom: 1px solid rgb(255,0,106);
+
+}
+
+textarea::-webkit-scrollbar{
+    width:4px
+}
+
+.center{
+    text-align:center
+}
+
+input[type="submit"]{
+    margin-top: 30px;
+    width:90%;
+    max-width:200px;
+    background:linear-gradient(to right, rgb(0, 179, 255), rgb(0, 47, 255));
+    color:white;
+    font-size:17px;
+    cursor:pointer;
+    border-radius:5px
+
+}
+
+.error{
+    color:red;
+}
+.error-border{
+    border-bottom:1px solid red;
+}
+
+#success{
+    color:green
+}
+
+
