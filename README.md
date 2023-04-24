@@ -22,23 +22,21 @@ The project has 4 main parts:
 
 
 ## **How it works**
-![smc](https://user-images.githubusercontent.com/68993711/233904319-3766f5cd-988a-4b2f-a85e-3d315dc31251.png)
+
 
 **Frontend**
 - The frontend is made with HTML, CSS AND Javascript. 
 - In script.js, the fetch api is used to make a post request API call to the api gateway.
 - If the status code in the response is 200, the form filled successfully prompt pops up.
 - If not then error is shown. 
-<br/>
-![smc](https://user-images.githubusercontent.com/68993711/233904215-1357fd83-dea3-463a-bc76-2fd3aaca02d6.png)
+
 
 **API Gateway**
 
 - Used the AWS API Gateway to create an API that would allow the frontend to communicate with the lambda function.
- 
-
 - A /contact resource was created and POST method was added. This was then integrated with the lambda function
 
+![smc](https://user-images.githubusercontent.com/68993711/233904319-3766f5cd-988a-4b2f-a85e-3d315dc31251.png)
 
 **Lambda**
 - The file lambda.py contains the code used for the function.
