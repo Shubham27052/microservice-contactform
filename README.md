@@ -22,6 +22,7 @@ The project has 4 main parts:
 
 
 ## **How it works**
+![smc](https://user-images.githubusercontent.com/68993711/233904319-3766f5cd-988a-4b2f-a85e-3d315dc31251.png)
 
 **Frontend**
 - The frontend is made with HTML, CSS AND Javascript. 
