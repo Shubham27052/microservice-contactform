@@ -28,6 +28,8 @@ The project has 4 main parts:
 - In script.js, the fetch api is used to make a post request API call to the api gateway.
 - If the status code in the response is 200, the form filled successfully prompt pops up.
 - If not then error is shown. 
+<br/>
+![smc](https://user-images.githubusercontent.com/68993711/233904215-1357fd83-dea3-463a-bc76-2fd3aaca02d6.png)
 
 **API Gateway**
 
