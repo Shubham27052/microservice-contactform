@@ -24,25 +24,28 @@ form.addEventListener("submit", function (event) {
       "Content-Type": "application/json",
     },
     body: JSON.stringify(request_body),
-  }).then((response) => {
-    response.json().then((data) => {
+  })
+    
+    .then((response) => {
+        if (response.status === 200) {
+          document.getElementById("final-message").style.display = "block";
+          document.getElementById("form").style.display = "none";
+          document.getElementById("final-message-h3").innerHTML = "Form filled successfully";
+        } else {
+          document.getElementById("form").reset();
+          document.getElementById("final-message-h3").innerHTML = "Error Occured while submitting the form. Please Try again";
+          document.getElementById("final-message").style.display = "block";
+          document.getElementById("final-message").style.margin = "20px auto";
+          document.getElementById("form").style.margin = "3vh auto 3vh auto";
+          document.getElementById("form").style.padding = "20px 30px";
+        }
+    return response.json()
+  })
+      
+      .then((data) => {
       console.log(data);
-    });
-    if (response.status === 200) {
-      document.getElementById("final-message").style.display = "block";
-      document.getElementById("form").style.display = "none";
-      document.getElementById("final-message-h3").innerHTML =
-        "Form filled successfully";
-    } else {
-      document.getElementById("form").reset();
-      document.getElementById("final-message-h3").innerHTML =
-        "Error Occured while submitting the form. Please Try again";
-      document.getElementById("final-message").style.display = "block";
-      document.getElementById("final-message").style.margin = "20px auto";
-      document.getElementById("form").style.margin = "3vh auto 3vh auto";
-      document.getElementById("form").style.padding = "20px 30px";
-    }
+      });
+
   });
 
-  //
-});
+ 
